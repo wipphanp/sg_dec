@@ -1,0 +1,10 @@
+---
+# Control machine 
+
+- hosts: control
+  become: true
+  tasks:
+    - name: Install control machine packages
+      apt: name={{ item }} state=present update_cache=yes
+      with_items:
+        - curl 
