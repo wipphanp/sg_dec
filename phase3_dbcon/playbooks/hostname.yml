@@ -1,0 +1,6 @@
+---
+# TO check the hostnames
+- hosts: all
+  tasks:
+    - name: Checking the host names 
+      command: hostname
