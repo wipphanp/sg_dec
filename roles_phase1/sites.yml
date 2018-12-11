@@ -1,0 +1,6 @@
+---
+# Include all the components in one place
+  - include: control.yml
+  - include: lb.yml
+  - include: db.yml
+  - include: ws.yml
